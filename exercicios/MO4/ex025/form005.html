@@ -1,44 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Exemplo de formulário</h1>
-        <form action="cadastro.php">
-            <fieldset>
-                <legend>
-                    Sexo
-                </legend>
-                <p>
-                    <label for="imasc">Masculino</label>
-                    <input type="radio" name="sex" id="imasc" checked><br>
-                    <label for="ifem">Femenino</label>
-                    <input type="radio" name="sex" id="ifem">
-                </p>
-            </fieldset>
-            <fieldset>
-                <legend>Esportes favoritos</legend>
-                <p>
-                    <label for="ibasc">Basquete</label>
-                    <input type="checkbox" name="basc" id="ibasc">
-                </p>
-                <p><label for="ifut">Futebol</label>
-                    <input type="checkbox" name="fut" id="ifut"></p>
-                <p><label for="inata">Natação</label>
-                        <input type="checkbox" name="nata" id="inata"></p>
-                <p>
-                    <label for="itenis">Tênis</label>
-                        <input type="checkbox" name="tenis" id="itenis">
-                        </p>
-            </fieldset>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
             <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
+                <input type="radio" name="sexo" id="imasc" value="M" autocomplete="sex" checked><label for="imasc">Masculino</label><br>
+                
+                <input type="radio" name="sexo" id="ifem" value="F" autocomplete="sex">
+                <label for="ifem">Femenino</label>
+                
             </p>
-        </form>
+        </fieldset>
+        <fieldset style="text-align: left;">
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="ifut" checked>
+            <label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="basc" id="ibasc">
+            <label for="ibasc">Basquete</label><br>
+            <input type="checkbox" name="nat" id="inat">
+            <label for="inat">Natação</label><br>
+            <input type="checkbox" name="tenis" id="itenis">
+            <label for="itenis">Tênis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>

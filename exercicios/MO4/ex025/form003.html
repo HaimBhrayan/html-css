@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Formulário</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="get">
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p><label for="inome">Nome: </label>
-            <input type="text" name="nome" id="inome" minlength="1" maxlength="50" placeholder="Pedro" required>
+            <input type="text" name="nome" id="inome" placeholder="João" autocomplete="name" required>
         </p>
         <p>
-            <label for="imedia">Média: </label>
-            <input type="number" name="media" id="imedia" min="1" max="10" step="0.1" placeholder="0 a 10" required>
+            <label for="imed">Média</label>
+            <input type="number" name="med" id="imed" step="0.1" value="5" min="0" max="10" required>
         </p>
         <p>
-            <label for="iperiodo">Período Letivo:</label>
-            <input type="month" name="periodo" id="iperiodo">
+            <label for="iperiodo">Período letivo</label>
+            <input type="month" name="periodo" id="iperiodo" value="2023-03" required>
         </p>
         <p>
-            <label for="iprova">Dia da Prova: </label>
-            <input type="date" name="prova" id="iprova">
+            <label for="idiaprova">Dia da prova</label>
+            <input type="date" name="diaprova" id="idiaprova" value="2023-03-27" required>
         </p>
         <p>
-           <label for="ihorario">Horario da Prova </label>
-           <input type="time" name="horario" id="ihorario"> 
+            <label for="ihoraprova">Horário da prova</label>
+            <input type="time" name="horaprova" id="ihoraprova" value="11:11" required>
         </p>
         <p>
             <input type="submit" value="Enviar">
