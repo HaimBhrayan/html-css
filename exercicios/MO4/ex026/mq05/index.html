@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <div onclick="clickMenu()"><img src="imagens/baseline_view_headline_black_24dp.png" alt="menu"></div>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando media query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ducimus soluta fuga magni quia illum, unde ab provident, temporibus in sapiente obcaecati, ex adipisci quisquam repellendus nihil dolorem ipsum incidunt corrupti odio qui accusamus. Error neque ut unde quaerat quas, labore ea alias suscipit beatae in. Beatae non aperiam minus nostrum repellat veritatis similique ad natus et expedita qui sit eveniet, uas est! Quam at haruue autem recusandae quae quas adipisci et perferendis excepturi, nesciunt repellat dignissimos aspernatur voluptatem ratione hic quia, deserunt numquam dolorum! Voluptas iure provident voluptatibus pariatur commodi</p> <p>consectetur voluptate id ducimus! Debitis facere eligendi, cupiditate mollitia vitae culpa fugiat beatae! Dolorum perferendis debitis laudantium totam repellat ipsam nam laborum, ducimus qui autem dolor atque tempora eaque harum molestias rerum voluptate. Consequuntur asperiores laborum eveniet doloribus modi, fuga quam ea quasi assumenda distinctio cupiditate fugiat natus omnis quas officia iusto quiaexcepturi culpa eveniet, minus, exercitationprovident facilis, labore, laboriosam molestias sapiente dolorum fugit ullam eos est officiis vero nam. Quaerat provident, deserunt quidem assumenda qui delectus ipsam tempora expedita, repellat placeat, maxime vel. Corporis culpa iusto omnis laudantium in officiis, ipsum animi quisquam alias incidunt amet tempora pariatur nostrum quod doloribus nobis aut explicabo! Molestias voluptates, possimus delectus ad quam quisquam iusto eum veniam nam nulla laboriosam totam, deleniti velit quis consequatur nihil corporis illo facilis ex sapiente officia ipsam voluptatum earum officiis? Maxime temporibus consectetur, omnis at corporis eligendi natus harum tempora, fugit, dolorum explicabo asperiores ea doloribus earum provident odio! Dignissimos libero, laborum cum, recusandae est nesciunt quam excepturi harum rem beatae quibusdam repellat, voluptatibus id dicta fugit blanditiis. Beatae nobis iusto inventore quasi sed autem ea. Cupiditate tempora ducimus nisi est. Repellat veniam quis explicabo qui, sint nostrum ullam deserunt sequi obcaecati ex non numquam? Molestias voluptatem cumque nulla officia similique, illo voluptatum eum quibusdam inventore dolore autem  debitis eum suscipit corrupti.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'none'){
+                itens.style.display = 'block';
+            }else{
+                itens.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
