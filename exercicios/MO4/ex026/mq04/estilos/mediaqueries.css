@@ -1,1 +1,57 @@
 @charset "UTF-8";
+
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }  
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    main::after{
+        content: 'Pagina impressa por www.cursoemvideo.com';
+    }
+    #phone{display:none;}
+    #tv{display: none;}
+    #print{display: block;}
+    #tablet{display: none;}
+    #pc{display: none;}
+}
+@media screen and (min-width: 768px) and (max-width:992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone{display:none;}
+    #tv{display: none;}
+    #print{display: none;}
+    #tablet{display: block;}
+    #pc{display: none;}
+}
+@media screen and (min-width: 992px) and (max-width:1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone{display:none;}
+    #tv{display: none;}
+    #print{display: none;}
+    #tablet{display: none;}
+    #pc{display: block;}
+}
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        min-width: 600px;
+    }
+    #phone{display:none;}
+    #tv{display: block;}
+    #print{display: none;}
+    #tablet{display: none;}
+    #pc{display: none;}
+}
