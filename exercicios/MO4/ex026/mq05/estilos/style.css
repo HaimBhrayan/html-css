@@ -7,6 +7,9 @@
 html, body{
     background-color: lightgrey;
 }
+menu{
+    display: none;
+}
 header{
     margin-bottom: 7px;
 }
@@ -40,9 +43,7 @@ header div:hover{
     cursor: pointer;
     background-color: rgba(15, 14, 14, 0.384);
 }
-menu{
-    display: none;
-}
+
 header li{
     list-style-type: none;
 }

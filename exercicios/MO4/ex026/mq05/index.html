@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media query</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="estilos/mediaStyle.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <div onclick="clickMenu()"><img src="imagens/baseline_view_headline_black_24dp.png" alt="menu"></div>
@@ -29,11 +29,19 @@
         </article>
     </main>
     <script>
+        
         function clickMenu(){
             if(itens.style.display == 'none'){
                 itens.style.display = 'block';
             }else{
                 itens.style.display = 'none';
+            }
+        }
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display='block';
+            }else{
+                itens.style.display='none';
             }
         }
     </script>
